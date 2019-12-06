@@ -56,7 +56,7 @@ jobs:
       - name: 同步最新的源码
         run: |
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
-          git pull openwrt master
+          git pull openwrt master --allow-unrelated-history
           git remote -v
       - name: Update feeds
         run: |
